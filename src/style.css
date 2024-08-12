@@ -317,6 +317,8 @@ ol li:nth-child(8) {
     justify-content: center;
     align-items: center;
     text-align: center;
-  
+  }
+  .album-cover {
+    max-height: 300px;
   }
 }
