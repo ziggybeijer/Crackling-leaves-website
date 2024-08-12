@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+.title_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 header {
   height: 300vh;
   font-family: "Rubik", sans-serif;
 }
 .logo {
-  width: 800px;
+  /* width: 800px; */
   height: auto;
 }
 hr {
@@ -18,25 +24,25 @@ hr {
   background: black;
 }
 .album-section {
-  width: 30%;
+  height: auto;
   font-size: 32px;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   margin: auto;
   display: flex;
   gap: 20px;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   text-align: center;
 
 }
 .album-cover {
   display: block;
+  object-fit:contain;
+  max-height: 200px;
   box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.74); 
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
   transition: transform 0.2s;
 
 }
@@ -95,17 +101,18 @@ html {
 
   position: fixed;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   margin: auto;
   width: 100%;
   height: 100%;
+  max-height: 100vh;
   /* center the text wrapper vertically */
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+
 }
 .left {
   margin-top: 24px;
@@ -113,7 +120,6 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: top;
-  height: 100%;
 }
 .socials {
   margin-top: 5vh;
@@ -266,4 +272,31 @@ ol li:nth-child(8) {
 .third_part {
   height: 200vh;
   background-color: #f0e6db;
+}
+@media (min-width: 1000px ) {
+  .title_wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    /* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  
+  }
+  .album-section {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  
+  }
 }
