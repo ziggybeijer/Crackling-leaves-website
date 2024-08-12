@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 300vh;
+  font-family: "Rubik", sans-serif;
+}
+.logo {
+  width: 800px;
+  height: auto;
+}
+hr {
+  border: none;
+  height: 4px;
+  background: black;
+}
+.album-section {
+  width: 30%;
+  font-size: 32px;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  margin: auto;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+}
+.album-cover {
+  display: block;
+  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.74); 
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.2s;
+
+}
+.album-cover:hover {
+  transform: scale(1.01);
+  transition: transform 0.2s;
+  
+}
+.out-now {
+  font-weight: lighter;
+}
+html {
+  /* scroll-snap-type: y mandatory; */
+}
+.first_part {
+  height: 200vh;
+  position: relative;
+}
+.second_part {
+  position: relative;
+}
+.section {
+  scroll-snap-align: start;
+}
+.container {
+  /* hide fixed overflow contents */
+  clip: rect(0, auto, auto, 0);
+  /* does not work if overflow = visible */
+  overflow: hidden;
+
+  /* only works with absolute positioning */
+  position: absolute;
+
+  /* Make sure containers are full-width and height */
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  }
+
+.container_solid {
+  background: #f0e6db;
+  
+  /* position this container at the top of its parent element */
+  top: 0;
+}
+
+.title_wrapper {
+  background: radial-gradient(
+    #196015, 
+    #c0751d, 
+    #196015, 
+    #c0751d
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.left {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  height: 100%;
+}
+.socials {
+  margin-top: 5vh;
+  -webkit-text-fill-color: unset;
+  color: #f0e6db;
+  margin-left: 64px;
+  display: flex;
+  justify-content: left;
+  gap: 24px;
+}
+.container_black {
+  background-color: #150101;
+  background-size:100vw auto;
+  background-position: center;
+  background-attachment: fixed;
+  
+  /* position the second container below the first container */
+  top: 100vh;
+}
+.image {
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.container_tour_dates {
+  color: #f0e6db;
+  background-image: url("../img/Crackling_leaves_bow.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+}
+.idkwhat {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  font-size: 32px;
+  width: 30%;
+
+}
+.tour_dates {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 32px;
+  width: 50%;
+  height: min-content;
+}
+
+.music {
+  margin: auto;
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: transparent;  
+  font-size: 48px;
+  min-width: 30%;
+}
+.listen { 
+  font-size: 36px;
+}
+section {
+  min-height: 100vh;
+  padding: 2em;
+  margin: auto;
+  max-width: 800px;
+}
+.brand {
+  display: flex;
+  gap: 10%;
+  align-items: center;
+}
+.fab {
+  z-index: 100;
+  cursor: pointer;
+  width: 32px;
+  font-size: 32px;
+  text-align: center;
+}
+.fab:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+
+
+.sticky {
+  position: sticky;
+  width: 800px;
+  top: 20vh;
+  height: fit-content;
+
+}
+.iets {
+  width: 50%;
+  height: 400vh;
+}
+.tour_text {
+  position: sticky;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+ol {
+  list-style: none;
+  font-size: 2rem;
+}
+ol li {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+ol li {
+  position: sticky;
+}
+ol li:nth-child(1) {
+  top: 0vh;
+  height: 105vh;
+}
+ol li:nth-child(2) {
+  top: 12.5vh;
+  height: 92.5vh;
+}
+ol li:nth-child(3) {
+  top: 20vh;
+  height: 85vh;
+}
+ol li:nth-child(4) {
+  top: 27.5vh;
+  height: 77.5vh;
+}
+ol li:nth-child(5) {
+  top: 35vh;
+  height: 70vh;
+}
+ol li:nth-child(6) {
+  top: 42.5vh;
+  height: 62.5vh;
+}
+ol li:nth-child(7) {
+  top: 50vh;
+  height: 55vh;
+}
+ol li:nth-child(8) {
+  top: 57.5vh;
+  height: 47.5vh;
+}
+.third_part {
+  height: 200vh;
+  background-color: #f0e6db;
+}

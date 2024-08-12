@@ -1,0 +1,95 @@
+.container {
+    /* hide fixed overflow contents */
+    clip: rect(0, auto, auto, 0);
+    /* does not work if overflow = visible */
+    overflow: hidden;
+  
+    /* only works with absolute positioning */
+    position: block;
+  
+    /* Make sure containers are full-width and height */
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    }
+  
+.title_wrapper {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+    /* center the text wrapper vertically */
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+ol {
+    list-style: none;
+    font-size: 2rem;
+}
+ol li {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+ol li {
+    position: sticky;
+}
+/* ! have the list items occupy enough vertical space to cover (viewport - vertical offset)
+otherwise the elements would collapse to the top once the page reaches the last item
+*/
+ol li:nth-child(1) {
+	 top: 0vh;
+	 height: 100vh;
+}
+ ol li:nth-child(2) {
+	 top: 7.5vh;
+	 height: 92.5vh;
+}
+ ol li:nth-child(3) {
+	 top: 15vh;
+	 height: 85vh;
+}
+ ol li:nth-child(4) {
+	 top: 22.5vh;
+	 height: 77.5vh;
+}
+ ol li:nth-child(5) {
+	 top: 30vh;
+	 height: 70vh;
+}
+ ol li:nth-child(6) {
+	 top: 37.5vh;
+	 height: 62.5vh;
+}
+ ol li:nth-child(7) {
+	 top: 45vh;
+	 height: 55vh;
+}
+ ol li:nth-child(8) {
+	 top: 52.5vh;
+	 height: 47.5vh;
+}
+ ol li:nth-child(9) {
+	 top: 60vh;
+	 height: 40vh;
+}
+ ol li:nth-child(10) {
+	 top: 67.5vh;
+	 height: 32.5vh;
+}
+ ol li:nth-child(11) {
+	 top: 75vh;
+	 height: 25vh;
+}
+ ol li:nth-child(12) {
+	 top: 82.5vh;
+	 height: 17.5vh;
+}
+ 
