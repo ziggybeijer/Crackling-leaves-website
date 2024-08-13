@@ -127,12 +127,13 @@ html {
   justify-content: top;
 }
 .socials {
+
   margin-top: 5vh;
   -webkit-text-fill-color: unset;
   color: #f0e6db;
   display: flex;
   justify-content: left;
-  gap: 24px;
+  gap: 12px;
 }
 .container_black {
   background-color: #150101;
@@ -152,16 +153,27 @@ html {
 
 .container_tour_dates {
   color: #f0e6db;
-  background-image: url("../img/Crackling_leaves_bow.jpg");
+  background-image: url("../img/Crackling_leaves_bow_extended_even_more_reduced.png");
   background-attachment: fixed;
-  background-size: auto;
-  background-position: center;
+  background-size: cover;
+  background-position: center bottom;
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   height: fit-content;
   width: 100%;
+}
+@media (min-width: 550px) {
+  .container_tour_dates {
+    background-image: url("../img/Crackling_leaves_bow_extended_reduced.png");    
+  }
+}
+
+@media (min-width: 1000px) {
+  .container_tour_dates {
+    background-image: url("../img/Crackling_leaves_bow_extended.png");
+  }
 }
 .idkwhat {
   font-family: "Kanit", sans-serif;
@@ -177,17 +189,28 @@ html {
   flex-direction: column;
   align-items: center;
   font-size: 32px;
-  width: 50%;
   height: min-content;
+  
 }
 
 .music {
+  margin-bottom: 20%;
   font-family: "Kanit", sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: left;
   color: transparent;  
   font-size: 48px;
-  min-width: 30%;
+  @media (min-width: 550px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1000px) {
+    width: unset;
+    min-width: 30%;
+
+    margin-bottom: 0px;
+    font-size: 48px;
+  }
 }
 .listen { 
   font-size: 36px;
@@ -224,13 +247,21 @@ section {
 }
 .tour_text {
   position: sticky;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
+  @media (min-width: 550px) {
+    font-size: 3rem;
+    
+  }
 }
 
 ol {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1rem;
+
+  @media (min-width: 550px) {
+    font-size: 2rem;
+  }
 }
 ol li {
   display: flex;
@@ -291,6 +322,14 @@ ol li:nth-child(8) {
     align-items: start;
     text-align: center;
     margin-bottom: 20%;
+  }
+  .socials {
+    margin-top: 5vh;
+    -webkit-text-fill-color: unset;
+    color: #f0e6db;
+    display: flex;
+    justify-content: left;
+    gap: 24px;
   }
 }
 @media (min-width: 1000px ) {
