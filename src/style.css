@@ -169,12 +169,6 @@ html {
     background-image: url("../img/Crackling_leaves_bow_extended_reduced.png");    
   }
 }
-
-@media (min-width: 1000px) {
-  .container_tour_dates {
-    background-image: url("../img/Crackling_leaves_bow_extended.png");
-  }
-}
 .idkwhat {
   font-family: "Kanit", sans-serif;
   display: flex;
