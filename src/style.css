@@ -28,7 +28,7 @@ hr {
 }
 .album-section {
   height: auto;
-  font-size: 32px;
+  font-size: 24px;
   font-family: "Orbitron", sans-serif;
   font-weight: bold;
   margin: auto;
@@ -44,13 +44,14 @@ hr {
   display: block;
   object-fit:contain;
   max-height: 200px;
-  box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.74); 
+  box-shadow: -0px 4px 9999px 200px rgba(192, 117, 29, 0.2); 
   border-radius: 10px;
+  transform: scale(1.001);
   transition: transform 0.2s;
 
 }
 .album-cover:hover {
-  transform: scale(1.01);
+  transform: scale(1.06);
   transition: transform 0.2s;
   
 }
@@ -194,10 +195,8 @@ html {
   flex-direction: column;
   align-items: left;
   color: transparent;  
-  font-size: 48px;
-  @media (min-width: 550px) {
-    font-size: 32px;
-  }
+  font-size: 32px;
+  
   @media (min-width: 1000px) {
     width: unset;
     min-width: 30%;
@@ -207,7 +206,11 @@ html {
   }
 }
 .listen { 
-  font-size: 36px;
+  font-size: 24px;
+
+  @media (min-width: 1000px) {
+    font-size: 32px;
+  }
 }
 section {
   min-height: 100vh;
@@ -342,6 +345,7 @@ ol li:nth-child(8) {
   
   }
   .album-section {
+    font-size: 32px;
     min-width: 30%;
     margin: auto;
     display: flex;
